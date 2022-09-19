@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  sofiaapptest:
+    image: sofiamobiapp:v1
+    build: .
+    container_name: sofiac1
+    ports:
+    - "3628:80"
+    restart: always
